@@ -1,0 +1,50 @@
+#include<iostream>
+#include<cstring>
+using namespace std;
+int main()
+{
+    int salary,bonus,total;
+    char g[100];
+    cout<<"Enter the grade and salary of employee:";
+    cin>>g;
+    cin>>salary;
+    if(strcmp(g,"A")==0)
+    {
+        if(salary>=10000)
+        {
+        bonus=(5*salary)/100;
+        cout<<"bonus="<<bonus;
+        total=bonus+salary;
+        cout<<"total="<<total;
+        }
+        else
+        {
+            bonus=(5*salary)/100+(2*salary)/100;
+             cout<<"bonus="<<bonus;
+              total=bonus+salary;
+        cout<<"total="<<total;
+        }
+    }
+    else if(strcmp(g,"B")==0)
+    {
+        if(salary>=10000)
+        {
+        bonus=(10*salary)/100;
+        cout<<"bonus="<<bonus;
+         total=bonus+salary;
+        cout<<"total="<<total;
+        }
+        else
+        {
+            bonus=(10*salary)/100+(2*salary)/100;
+             cout<<"bonus="<<bonus;
+              total=bonus+salary;
+        cout<<"total="<<total;
+        }
+    }
+    else
+        {
+    cout<<"Enter correct grade";
+    }
+    return 0;
+}
