@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+class Room
+{
+public:
+int l,b,a;
+ void Area()
+    {
+        cout<<"Enter the length and breadth:";
+        cin>>l>>b;
+     a=l*b;
+     cout<<"Area ="<<a;
+    }
+};
+int main()
+{
+    Room r1;
+    r1.Area();
+}
